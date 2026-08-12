@@ -97,6 +97,7 @@ class NoteController extends Controller
     }
 
     public function destroy(Nota $nota): RedirectResponse
+
     {
         $this->authorize('delete', $nota);
 
